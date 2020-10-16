@@ -3,10 +3,10 @@
 addpath('./borders_v3.1.2/borders/')
 % precipitation data availabe from https://grass.osgeo.org/download/sample-data/
 % the include MATLAB data file was exported using GrassGIS (grass.osgeo.org)
-load('slovakia_rain.mat')
+load('data/slovakia_rain.mat')
 % shape file for Slovakian border usedful for plotting
 % available directly from https://gadm.org/maps.html
-slov = shaperead('./gadm36_SVK_0.shp', 'UseGeoCoords', true);
+slov = shaperead('./data/gadm36_SVK_0.shp', 'UseGeoCoords', true);
 
 % clean up data
 % fix quirk where first entry in data matrix has spurious value
